@@ -1,0 +1,188 @@
+<!DOCTYPE html><!-- dtd path : document type definition -->
+<html>
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="put imp words from ur webpage" >
+        <meta name="author" content="put name of author">
+        <meta name="description" content="put short descr">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- explore more meta tags on your own-->
+        <style>
+       *{margin:0;
+         padding:0;
+        }
+        header{
+            background-color:skyblue;
+            width:100%;
+            position:fixed;
+            top:0;
+        }
+        .head1{
+            align-items:start;
+           justify-content:start;
+        }
+        footer{
+            background-color:skyblue;
+            width:100%;
+            position:fixed;
+            bottom:0;
+            color:white;
+
+        }        
+        .navbar{
+            color:white;
+            background-color:skyblue; 
+            height:50px;
+            width:100%;
+            padding-top:10px;
+            display:flex;
+            flex-direction:row; 
+            justify-content:flex-end;
+        }
+        ul{
+            display:flex;    
+            flex-direction:row; 
+            justify-content:center;
+            margin-left:600px;
+        }
+        li{
+           list-style-type: none;
+           padding:10px;
+           display:flex;
+           flex-direction:row;
+           justify-content:flex-end;
+        }
+        a{
+            color:white;
+            text-decoration:none;
+        }
+
+
+
+
+
+            .error {
+            color:red;
+        }
+
+        .container{
+            padding:50px;
+            background-image:url("https://res.cloudinary.com/dv6faohpe/image/upload/v1639895690/bkwatch21_zh5hsq.jpg");
+            background-size:cover;
+            height:100vh;
+            width:100vw;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            padding-top:25px;
+            
+               
+        
+        }
+        .card{
+            height:40vh;
+            width:30vw;            
+            background-color:white;
+            padding-top:30px;
+            padding-left:10px;
+            
+
+        }
+
+        .ht{
+            color:Black;
+            font-size:30px;
+            
+        }
+
+       
+        input[type=text]:focus,input[type=password]:focus{
+            background-color:white;
+
+        }
+        #ht1{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+
+        }
+       
+ 
+        
+              </style>
+
+
+
+    </head>
+
+    <body>
+
+        <div>
+
+    <header>
+        <nav class="navbar">
+            <h2 class="head1"></h2>
+            <ul> 
+                <li><a href="D:\project\loginpage.html">Login</a></li>
+                <li><a href="D:\project\index.html">Home</a></li>
+                <li><a href="D:\project\watches.html">Watches</a></li>
+                <li><a href="D:\project\delivery.html">Delivery&Paynment</a></li>
+                <li><a href="D:\project\about us.html">About Us</a></li>
+                
+                
+            </ul>
+        </nav>
+    </header>
+
+
+
+    
+
+        <div class="container" >
+    <form action="D:\project\index.html"  onSubmit="return validateForm()"   novalidate> <!-- novalidate : to stop browser's implicit validation-->
+        <div class="card">
+        <table>
+            
+   
+            <footer> 
+
+                <tr class="ht"><td><label for="email">Email Id:</label></td>
+                    <td><input type="email" id="email"  name="email" onblur="validate1()" required></td></tr>
+                <tr><td></td><td id="error1" class="error"></td></tr>  
+                
+                <tr class="ht"><td><label for="pass">Password:</label></td>
+                    <td><input type="password" id="pass"  name="password" onblur="validate2()" required></td></tr>
+                <tr><td></td><td id="error2" class="error"></td></tr><tr><td></td>
+
+                    <td><input type="submit" id="sub"/><input type="reset" id="res" /></td> 
+            
+                    
+                
+               
+   
+
+</div>
+    </table>
+
+
+</form>
+</div>
+<script>
+    $(document).ready(function(){
+      $("#res").mousedown(function(){
+        alert("Want to reset?Click OK");
+      });
+    });
+    </script>
+    </div>
+    
+
+<script src="D:\project\loginpage.js"></script>
+</footer>
+</body> 
+        
+        
+</html>
